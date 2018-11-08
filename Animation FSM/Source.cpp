@@ -16,23 +16,50 @@
 
 #include<iostream>
 #include<SFML\Graphics.hpp>
+#include<thread>
 #include"Animation.h"
 
 int main()
 {
 	Animation fsm; 
+	cout << "Press (1 for Idling \n      (2 for climbing \n      (3 for jumping \n      (4 for walking" << endl;
+	cout << "      (5 for Swordmanship \n      (6 for shoveling \n      (7 for hammering" << endl;
 	while (true) {
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+		
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
 		{
-			fsm.jumping();
+			fsm.idle();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
 		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::RShift))
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
 		{
 			fsm.climbing();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
 		}
-		else
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
 		{
-			fsm.idle(); 
+			fsm.jumping();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num4))
+		{
+			fsm.walking();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num5))
+		{
+			fsm.swordmanship();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num6))
+		{
+			fsm.shoveling();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num7))
+		{
+			fsm.hammering();
+			std::this_thread::sleep_for(std::chrono::milliseconds::duration(3000));
 		}
 	}
 

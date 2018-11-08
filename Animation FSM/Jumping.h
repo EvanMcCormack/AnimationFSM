@@ -8,6 +8,7 @@ public:
 	Jumping();
 	~Jumping();
 	void idle(Animation* a);
+	void swordmanship(Animation* a);
 };
 
 #endif

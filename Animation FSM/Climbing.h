@@ -1,6 +1,6 @@
 #ifndef CLIMBING_H
 #define CLIMBING_H
-#include"Animation.h"
+#include"State.h"
 
 using namespace std;
 
@@ -10,6 +10,8 @@ public:
 	Climbing();
 	~Climbing() ;
 	void idle(Animation* a);
+	void climbing(Animation * a);
 };
+#include "State.h"
 
 #endif

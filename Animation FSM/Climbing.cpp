@@ -14,3 +14,10 @@ void Climbing::idle(Animation * a)
 	a->setCurrent(new Idle());
 	delete this;
 }
+
+void Climbing::climbing(Animation * a)
+{
+	cout << "Still Climbing" << endl;
+	a->setCurrent(new Climbing());
+	delete this;
+}

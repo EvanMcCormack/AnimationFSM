@@ -1,7 +1,12 @@
-﻿  Source.cpp
-  Jumping.cpp
+﻿  Jumping.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Walking.cpp
+  Swordmanship.cpp
+  Source.cpp
+  Shoveling.cpp
   Idle.cpp
+  Hammering.cpp
   Climbing.cpp
   Animation.cpp
-  Generating Code...
   Animation FSM.vcxproj -> C:\Users\HP6460b\AnimationFSM\Debug\Animation FSM.exe

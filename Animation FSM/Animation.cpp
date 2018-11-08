@@ -19,3 +19,23 @@ void Animation::climbing()
 {
 	current->climbing(this);
 }
+
+void Animation::walking()
+{
+	current->walking(this);
+}
+
+void Animation::swordmanship()
+{
+	current->swordmanship(this);
+}
+
+void Animation::shoveling()
+{
+	current->shoveling(this);
+}
+
+void Animation::hammering()
+{
+	current->hammering(this);
+}

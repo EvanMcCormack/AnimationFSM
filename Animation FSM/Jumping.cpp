@@ -14,3 +14,10 @@ void Jumping::idle(Animation * a)
 	a->setCurrent(new Idle());
 	delete this;
 }
+
+void Jumping::swordmanship(Animation* a)
+{
+	cout << "Going from Jumping to swording" << endl;
+	a->setCurrent(new Swordmanship());
+	delete this;
+}

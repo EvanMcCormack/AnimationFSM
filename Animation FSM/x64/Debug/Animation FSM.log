@@ -1,9 +1,2 @@
-﻿  Jumping.cpp
-  Generating Code...
-  Compiling...
-  Source.cpp
-  Idle.cpp
-  Climbing.cpp
-  Animation.cpp
-  Generating Code...
+﻿  Source.cpp
 sfml-window-d.lib(sfml-window-d-2.dll) : fatal error LNK1112: module machine type 'x86' conflicts with target machine type 'x64'
